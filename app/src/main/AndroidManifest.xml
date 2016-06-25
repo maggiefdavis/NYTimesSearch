@@ -23,6 +23,8 @@
         <activity
             android:name=".Activities.ArticleActivity"
             android:label="@string/title_activity_article"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activities.FilterActivity"></activity>
     </application>
+
 </manifest>

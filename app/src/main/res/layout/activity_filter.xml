@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.codepath.nytimessearch.Activities.FilterActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filter search results:"
+        android:id="@+id/tvText"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDate"
+        android:onClick="showDatePickerDialog"
+        android:layout_alignLeft="@+id/spSort"
+        android:layout_alignStart="@+id/spSort"
+        android:hint="Click to enter date..."
+        android:layout_marginTop="70dp"
+        />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spSort"
+        android:layout_marginTop="51dp"
+        android:spinnerMode="dropdown"
+        android:layout_below="@+id/tvDate"
+        android:layout_alignLeft="@+id/cbBusiness"
+        android:layout_alignStart="@+id/cbBusiness" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Business"
+        android:id="@+id/cbBusiness"
+        android:layout_below="@+id/spSort"
+        android:layout_centerHorizontal="true"
+        android:checked="false"
+        android:onClick="onCheckboxClicked"
+        android:layout_marginTop="50dp"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Culture"
+        android:id="@+id/cbCulture"
+        android:checked="false"
+        android:layout_below="@+id/cbBusiness"
+        android:layout_alignLeft="@+id/cbBusiness"
+        android:layout_alignStart="@+id/cbBusiness"
+        android:onClick="onCheckboxClicked"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Politics"
+        android:id="@+id/cbPolitics"
+        android:checked="false"
+        android:layout_below="@+id/cbCulture"
+        android:layout_alignLeft="@+id/cbCulture"
+        android:layout_alignStart="@+id/cbCulture"
+        android:onClick="onCheckboxClicked"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Science"
+        android:id="@+id/cbScience"
+        android:checked="false"
+        android:layout_below="@+id/cbPolitics"
+        android:layout_alignLeft="@+id/cbPolitics"
+        android:layout_alignStart="@+id/cbPolitics"
+        android:onClick="onCheckboxClicked"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/btnSave"
+        android:onClick="onSubmit"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Begin Date"
+        android:id="@+id/tvBeginDate"
+        android:layout_alignTop="@+id/tvDate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sort Order"
+        android:id="@+id/tvSortOrder"
+        android:layout_alignTop="@+id/spSort"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="News Desk"
+        android:id="@+id/tvNewsDesk"
+        android:layout_alignTop="@+id/cbBusiness"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
