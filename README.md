@@ -44,8 +44,8 @@ Here's a walkthrough of implemented user stories:
 My gifs aren't the best because of slow internet connection via mobile hotspot and also I was beginning to hit the API call limit.
 The first gif includes a working detail view and the second includes working date filtering.
 
-<img src='http://imgur.com/JYZbwlt' title='Video Walkthrough 1' width='' alt='Video Walkthrough 1' />
-<img src='http://imgur.com/2skRWIU' title='Video Walkthrough 2' width='' alt='Video Walkthrough 2' />
+<img src='https://github.com/maggiefdavis/NYTimesSearch/blob/master/NYTimesSearchGif.gif' title='Video Walkthrough 1' width='' alt='Video Walkthrough 1' />
+<img src='https://github.com/maggiefdavis/NYTimesSearch/blob/master/NYTimesSearch.gif' title='Video Walkthrough 2' width='' alt='Video Walkthrough 2' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
